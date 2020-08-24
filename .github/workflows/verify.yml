@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Find Files
+      run: |
+        > files
+        find . -name '*.index' >> files
+        find . -name '*.xml' >> files
+        
+    - name: Lint Files
+      run: |
+        while read line; do
+          xmllint --noout $line
+        done < files
