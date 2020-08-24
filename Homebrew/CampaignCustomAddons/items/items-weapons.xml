@@ -4,7 +4,7 @@
 		<name>Weapons</name>
         <description></description>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.0.9">
+        <update version="0.1.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -26,7 +26,7 @@
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
 		</setters>
 	</element>
-	<element name="Lightbringer" type="Magic Item" source="Custom" id="ID_CUSTOM_MAGIC_ITEM_LIGHTBRINGER">
+	<element name="Lightbringer" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_LMOP_MAGIC_ITEM_LIGHTBRINGER">
 		<description>
 			<p>This +1 warhammer was made for a cleric of Lathander, the god of dawn. The head of the warhammer is shaped
 				like a sunburst and made of solid brass. Named Lightbringer, this weapon glows as bright as a torch when its wielder commands.
@@ -42,7 +42,7 @@
 			<set name="enhancement">1</set>
 		</setters>
 	</element>
-	<element name="Strange Dagger" type="Magic Item" source="Custom" id="ID_CUSTOM_MAGIC_ITEM_STRANGE_DAGGER">
+	<element name="Strange Dagger" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_STRANGE_DAGGER">
 		<description>
 			<p>An exquisitely made serrated dagger which belonged to a member of Neverwinter nobility centuries ago.
 				Although reluctant to share its secrets, the dagger is with some sort of magical aura connected to a long forgotten prophecy.
