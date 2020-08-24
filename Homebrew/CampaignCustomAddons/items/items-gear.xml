@@ -7,7 +7,7 @@
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-gear.xml" />
 		</update>
 	</info>
-	<element name="Moonstone Mannor Room Key" type="Item" source="Custom" id="ID_DNDBOIS_XGTE_ITEM_MOONSTONE_MANNOR_KEY">
+	<element name="Moonstone Mannor Room Key" type="Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_XGTE_ITEM_MOONSTONE_MANNOR_KEY">
 		<description>
 			<p>A duplicate of a moonstone mannor room key.</p>
 		</description>

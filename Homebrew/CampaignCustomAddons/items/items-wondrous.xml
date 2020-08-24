@@ -7,7 +7,7 @@
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-wondrous.xml" />
 		</update>
 	</info>
-	<element name="Ruby of the War Mage" type="Magic Item" source="Custom" id="ID_DNDBOIS_XGTE_ITEM_RUBY_OF_THE_WAR_MAGE">
+	<element name="Ruby of the War Mage" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_XGTE_ITEM_RUBY_OF_THE_WAR_MAGE">
 		<description>
 			<p>Etched with eldritch runes, this 1—inch-diameter ruby can be attached to a weapon and used to channel magical energy, allowing the user to manoeuvre the weapon to perform somatic components of spells.
 				If the user does not have the weapon equipped or cannot correctly manoeuvre the weapon for any reason, somatic components must be cast as normal.
@@ -24,7 +24,7 @@
 			<set name="attunement" addition="by a spellcaster">true</set>
 		</setters>
 	</element>
-	<element name="Bracelet of Fey Speech" type="Magic Item" source="Custom" id="ID_DNDBOIS_XGTE_ITEM_BRACELET_FEY_SPEECH">
+	<element name="Bracelet of Fey Speech" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_XGTE_ITEM_BRACELET_FEY_SPEECH">
 		<description>
 			<p>Fey, ornate design clearly made to honour a special occasion, the bearer can understand and speak sylvan while attuned to it, item is sentient [BLANK] bracelet, sets charisma to 19, advantage on charisma checks.</p>
 		</description>
