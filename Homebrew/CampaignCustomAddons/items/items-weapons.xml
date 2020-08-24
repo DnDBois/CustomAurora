@@ -46,11 +46,12 @@
 		<description>
 			<p>An exquisitely made serrated dagger which belonged to a member of Neverwinter nobility centuries ago.
 				Although reluctant to share its secrets, the dagger is with some sort of magical aura connected to a long forgotten prophecy.
-				Upon exposure to moonlight an inscription on the blade appears reading: </p>
-			<p class = "indent"><i>"In the depths a broken path,</i></p>
-			<p class = "indent"><i>a way to salvation.</i></p>
-			<p class = "indent"><i>Keep it protected with lock and key,</i></p>
-			<p class = "indent"><i>until damnation."</i></p>
+				Upon exposure to moonlight an inscription on the blade appears, reading: </p>
+			<br></br>
+			<p><indent><i>"In the depths a broken path,</i></p>
+			<p><indent><i>a way to salvation.</i></p>
+			<p><indent><i>Keep it protected with lock and key,</i></p>
+			<p><indent><i>until damnation."</i></p>
 		</description>
 		<setters>
 			<set name="keywords">dagger</set>
