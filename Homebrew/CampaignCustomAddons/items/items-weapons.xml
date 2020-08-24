@@ -4,10 +4,13 @@
 		<name>Weapons</name>
         <description></description>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.0.8">
+        <update version="0.0.9">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
+	<!-- Note, cannot create magic weapons without selecting a base weapon class (longsword, warhammer etc.) This ties weapon damage rolls to the
+	base weapon class which cannot be changed. If the new magic item has a damage roll that is different from its base class then a placeholder
+	weapon class must be defined to allow the weapon properties to be defined.-->
 	<element name="Talon" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_TALON">
 		<description>
 			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon. While the weapon is on your person, you have advantage on Initiative Rolls. When Orcs are within 100ft of you, the blade glows with a faint blue light.</p>
@@ -23,39 +26,40 @@
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
 		</setters>
 	</element>
-	<!-- Note, cannot create new Magic without base standard weapon to draw damage details from.
-	Similarly, cannot remap damage of magic weapon as it is drawn from base.
-	This means we need a placeholder base item to specify to damage details of the custom magic item. -->
-	<element name="Lightbringer" type="Weapon" source="Campaign Custom Add Ons" id="ID_DNDBOIS_PHB_WEAPON_LIGHTBRINGER">
-		<supports>ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	<element name="Lightbringer" type="Magic Item" source="Custom" id="ID_CUSTOM_MAGIC_ITEM_LIGHTBRINGER">
 		<description>
-			<p>This is a placeholder item to allow Lightbringer to have damage remapped to 1d8 Slashing. Do not use as non magic weapon.</p>
+			<p>This +1 warhammer was made for a cleric of Lathander, the god of dawn. The head of the warhammer is shaped
+				like a sunburst and made of solid brass. Named Lightbringer, this weapon glows as bright as a torch when its wielder commands.
+				While glowing, the warhammer deals an extra 1d6 radiant damage to undead creatures.</p>
 		</description>
 		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">5</set>
-			<set name="weight" lb="4">4 lb.</set>
-			<set name="slot">onehand</set>
-			<set name="damage" type="slashing">1d8</set>
-			<set name="versatile">1d10</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE</set>
-			<set name="properties">Versatile</set>
-		</setters>
-	</element>
-	<element name="Lightbringer" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_LIGHTBRINGER">
-		<description>
-			<p>You have a +1 bonus to attack and damage rolls made with Lightbringer. This is a magic weapon</p>
-			<p class="indent">This <i>+1 mace</i> was made for a cleric of Lathander, the god of dawn. The head of the mace is shapred like a sunburst and made of solid brass. Named <i>Lightbringer</i>, this weapon glows as bright as a torch when its wielder commands. While glowing, the mace deals an extra 1d6 radiant damage to undead creatures.</p>
-		</description>
-		<setters>
-			<set name="keywords">mace</set>
+			<set name="keywords">warhammer</set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="3">3 lb.</set>
-			<set name="type" addition="mace">Weapon</set>
+			<set name="type" addition="warhammer">Weapon</set>
 			<set name="rarity">Uncommon</set>
-			<set name="weapon">Lightbringer</set>
+			<set name="weapon">warhammer</set>
 			<set name="enhancement">1</set>
+		</setters>
+	</element>
+	<element name="Strange Dagger" type="Magic Item" source="Custom" id="ID_CUSTOM_MAGIC_ITEM_STRANGE_DAGGER">
+		<description>
+			<p>An exquisitely made serrated dagger which belonged to a member of Neverwinter nobility centuries ago.
+				Although reluctant to share its secrets, the dagger is with some sort of magical aura connected to a long forgotten prophecy.
+				Upon exposure to moonlight an inscription on the blade appears reading: </p>
+			<p class = "indent"><i>"In the depths a broken path,</i></p>
+			<p class = "indent"><i>a way to salvation.</i></p>
+			<p class = "indent"><i>Keep it protected with lock and key,</i></p>
+			<p class = "indent"><i>until damnation."</i></p>
+		</description>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">dagger</set>
+			<set name="enhancement">0</set>
 		</setters>
 	</element>
 </elements>
