@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/source.xml" />
+		</update>
+	</info>
+	<element name="Campaign Custom Add Ons" type="Source" source="Homebrew" id="ID_DNDBOIS_SOURCE_CAMPAIGN_CUSTOM_ADDONS">
+		<description>
+			<![CDATA[<p><strong>All of the Custom Campaign Items</strong></p><p>Thank Callum for all the great ideas.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CCA</set>
+			<set name="url">https://github.com/DnDBois</set>
+			<!-- <set name="image">https://media.dnd.wizards.com/styles/product_tabletop_left/public/images/product/DnD_DMG.png</set> -->
+			<!-- <set name="errata">https://media.wizards.com/2018/dnd/downloads/DMG-Errata.pdf</set> -->
+			<set name="author" abbreviation="DNDBois" url="https://github.com/DnDBois">DND Bois</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20200525</set>
+		</setters>
+	</element>
+</elements>

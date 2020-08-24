@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Homebrew</name>
+		<description>Our Custom Homebrew Content.</description>
+		<author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.0.1">
+			<file name="Homebrew.index" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<obsolete name="sources.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/sources.xml" />
+		<file name="CampaignCustomAddons.index" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons.index" />
+	</files>
+</index>
