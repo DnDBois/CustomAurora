@@ -62,4 +62,22 @@
 			<set name="enhancement">0</set>
 		</setters>
 	</element>
+	<element name="Remnant of the Defeated" type="Magic Item" source="Campaign Custom Add Ons" id="D_DNDBOIS_MAGIC_ITEM_REMNANT_OF_THE_DEFEATED">
+	<description>
+		<p><b>Battleworn. </b>You recieve a +2 bonus to Attack rolls when attacking with this weapon.</p>
+		<br></br>
+		<p><b>Recalling the War. </b>As a free action you may speak a command word and summon the full spectral blade of this weapon. The dagger turns into a longsword. It deals 1d8+2 Slashing damage when used with one hand, or 1d10+2 Slashing when used with both hands.</p>
+		<p>All properties of the dagger (Finesse, Light, Range, Thrown) do not apply in this form.</p>
+		<p>The weapon remains in this form until you speak the command word again.</p>
+	</description>
+	<setters>
+		<set name="keywords">dagger</set>
+		<set name="category">Magic Weapons</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="type" addition="dagger">Weapon</set>
+		<set name="rarity">Rare</set>
+		<set name="enhancement">2</set>
+		<set name="weapon">Dagger</set>
+	</setters>
+</element>
 </elements>
