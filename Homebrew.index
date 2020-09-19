@@ -4,7 +4,7 @@
 		<name>Homebrew</name>
 		<description>Our Custom Homebrew Content.</description>
 		<author url="https://github.com/DnDBois">DnD Bois</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Homebrew.index" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew.index" />
 		</update>
 	</info>
