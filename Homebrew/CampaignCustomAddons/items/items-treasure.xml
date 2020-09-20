@@ -8,4 +8,16 @@
 			<file name="items-treasure.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-treasure.xml" />
 		</update>
 	</info>
+	<element name="T-Rex Tooth" type="Item" source="Custom" id="ID_DNDBOIS_XGTE_ITEM_TREX_TOOTH">
+		<description>
+			<p>A large tooth once belonging to a T-Rex.</p>
+		</description>
+		<setters>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0.25 lb.</set>
+			<set name="type">Treasure</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
 </elements>
