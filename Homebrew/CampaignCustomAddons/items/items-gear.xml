@@ -33,7 +33,7 @@
 	</element>
 	<element name="Charcoal" type="Item" source="Custom" id="ID_DNDBOIS_XGTE_ITEM_CHARCOAL">
 		<description>
-			<p>A lump of coal.</p>
+			<p>A lump of charcoal.</p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
