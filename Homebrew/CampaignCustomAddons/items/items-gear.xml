@@ -3,7 +3,7 @@
 	<info>
 		<name>Adventuring Gear</name>
 		<author url="https://github.com/DnDBois">DnD Bois</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-gear.xml" />
 		</update>
 	</info>
@@ -17,6 +17,30 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Adventuring Gear</set>
 			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Coal" type="Item" source="Custom" id="ID_DNDBOIS_XGTE_ITEM_COAL">
+		<description>
+			<p>A lump of coal.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0">0.25 lb.</set>
+			<set name="type">Adventuring Gear</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Charcoal" type="Item" source="Custom" id="ID_DNDBOIS_XGTE_ITEM_CHARCOAL">
+		<description>
+			<p>A lump of charcoal.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0">0.25 lb.</set>
+			<set name="type">Adventuring Gear</set>
+			<set name="rarity">Common</set>
 		</setters>
 	</element>
 </elements>
