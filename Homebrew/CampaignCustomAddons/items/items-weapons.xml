@@ -81,4 +81,38 @@
 		<set name="weapon">Dagger</set>
 	</setters>
 </element>
+<element name="Scythe" type="Weapon" source="Campaign Custom Add Ons" id="ID_DNDBOIS_WEAPON_SCYTHE">
+	<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	<description>
+		<p></p>
+	</description>
+	<setters>
+		<set name="category">Weapons</set>
+		<set name="cost" currency="gp">15</set>
+		<set name="weight" lb="3">3 lb.</set>
+		<set name="slot">onehand</set>
+		<set name="damage" type="slashing">1d8</set>
+		<set name="versatile">1d10</set>
+		<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+	</setters>
+</element>
+<element name="Moonblade" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_MOONBLADE">
+	<description>
+		<p>"This Scythe is made from a black metal with grey waves giving it a dark marble look. Thought to be forged from the Moon itself, the point where the handle meets the blade is disconnected, and only a small blue stone holds the pieces together. It is cratered like that of the Moon. On the handle there are four runes that glow when held, each representing the previous owners. Currently, one shines blue while the rest are silver. A symbol of Tyr hangs by a silver chain wrapped around the blade"</p>
+		<br></br>
+		<p>When attuned to Moonblade, you have a +2 to attack and damage rolls with this weapon.</p>
+		<br></br>
+		<p><b>Essence of Courage. </b>While holding this weapon, you cannot be frightened</p>
+	</description>
+			<setters>
+		<set name="keywords">Scythe</set>
+		<set name="category">Magic Weapons</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="type" addition="scythe">Weapon</set>
+		<set name="attunement">true</set>
+		<set name="rarity">Legendary</set>
+		<set name="enhancement">2</set>
+		<set name="weapon">Scythe</set>
+	</setters>
+</element>
 </elements>
