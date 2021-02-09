@@ -4,7 +4,7 @@
 		<name>Weapons</name>
         <description></description>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.1.2">
+        <update version="0.1.3">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -114,5 +114,29 @@
 		<set name="enhancement">2</set>
 		<set name="weapon">Scythe</set>
 	</setters>
+</element>
+<element name="Sargonnas' Claw" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_SARGONNAS_BLADE">
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    <description>
+        <p>"This Glaive was orignally created by the Djinni Salah Balaah, made from one piece of a finely polished metal with swirling motifs carved into it, representing the Elemental Plane of Air. Now, these motifs have thin wisps of smoke trailing from them, and the cutting edge of the blade is an ashen black. However, when in use, the cutting edge glows red and orange and flickers like flame."</p>
+	<br></br>
+	<p>"Sargonnas' Claw is a +1 Glaive that holds 2 charges, that it regains at dawn."</p>
+	<br></br>
+	<p><b>Raging Embers. </b>While raging Sargonnas' Claw activates as the blade heats up intensely. While active, Sargonnas' Claw deal an extra 1d6 fire damage on a hit</p>
+	<br></br>
+	<p><b>Sweeping Blaze. </b>As an action while Sargonnas' Claw, you can expend 1 charge and sweep the glaive in an arc, sending out a wave of flame. Each creature in a 15 foot cone must make a DC 14 Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much on a successful one. The fire ignites any flammable objects in the area that are not being worn or carried.</p>
+    </description>
+    		<setters>
+        <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+        <set name="keywords">Glaive</set>
+        <set name="category">Magic Weapons</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="slot">twohand</set>
+        <set name="type" addition="glaive">Weapon</set>
+        <set name="attunement">true</set>
+        <set name="rarity">Rare</set>
+        <set name="enhancement">1</set>
+        <set name="weapon">Glaive</set>
+    </setters>
 </element>
 </elements>
