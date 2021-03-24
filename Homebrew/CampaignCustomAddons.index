@@ -4,12 +4,13 @@
 		<name>CampaignCustomAddons</name>
 		<description>Custom Addons for Main Campaign</description>
 		<author url="https://github.com/DnDBois">DnD Bois</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="CampaignCustomAddons.index" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons.index" />
 		</update>
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/source.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/feats.xml" />
 		<file name="items-gear.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-gear.xml" />
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-armor.xml" />
 		<file name="items-gifts.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-gifts.xml" />

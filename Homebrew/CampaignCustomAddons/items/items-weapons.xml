@@ -4,7 +4,7 @@
 		<name>Weapons</name>
         <description></description>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.1.3">
+        <update version="0.1.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -96,13 +96,14 @@
 		<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
 	</setters>
 </element>
-<element name="Moonblade" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_MOONBLADE">
+<element name="Moonblade" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_MOONBLADE">
 	<description>
-		<p>"This Scythe is made from a black metal with grey waves giving it a dark marble look. Thought to be forged from the Moon itself, the point where the handle meets the blade is disconnected, and only a small blue stone holds the pieces together. It is cratered like that of the Moon. On the handle there are four runes that glow when held, each representing the previous owners. Currently, one shines blue while the rest are silver. A symbol of Tyr hangs by a silver chain wrapped around the blade"</p>
+		<p>"This Scythe is made from a black metal with grey waves giving it a dark marble look. Thought to be forged from the Moon itself, the point where the handle meets the blade is disconnected, and only a small blue stone holds the pieces together. It is cratered like that of the Moon. On the handle there are four runes that glow when held, each representing the previous owners. Currently, two shine blue while the rest are silver. A symbol of Tyr hangs by a silver chain wrapped around the blade"</p>
 		<br></br>
 		<p>When attuned to Moonblade, you have a +2 to attack and damage rolls with this weapon.</p>
 		<br></br>
-		<p><b>Essence of Courage. </b>While holding this weapon, you cannot be frightened</p>
+		<p class="indent"><b>Essence of Courage. </b>While holding this weapon, you cannot be frightened</p>
+		<p class="indent"><b>Essence of Battle. </b>While attuned to this, you gain an additional d8 superiority die, and the two maneuvers: <b>Rally</b> and <b>Sweeping Attack</b>.</p>
 	</description>
 			<setters>
 		<set name="keywords">Scythe</set>
@@ -114,6 +115,9 @@
 		<set name="enhancement">2</set>
 		<set name="weapon">Scythe</set>
 	</setters>
+	<rules>
+      <grant type="Feat" id="ID_DNDBOIS_FEAT_MOONBLADE_ESSENCE_BATTLE" />
+    </rules>
 </element>
 <element name="Sargonnas' Claw" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_SARGONNAS_BLADE">
     <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
