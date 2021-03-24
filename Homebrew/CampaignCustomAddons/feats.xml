@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Custom Feats</description>
+        <author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/feats.xml" />
+		</update>
+	</info>
+
+    <!-- Feat to facilitate adding Essence of Battle from the Moonblade Scythe - only possible if scythe is equipped -->
+    <!-- Reskin of Martial Adept -->
+    <element name="Moonblade, Essence of Battle" type="Feat" source="Campaign Custom Add Ons" id="ID_DNDBOIS_FEAT_MOONBLADE_ESSENCE_BATTLE">
+      <compendium display="false" />
+      <requirements>ID_DNDBOIS_MAGIC_ITEM_MOONBLADE</requirements>
+      <description>
+        <p>While attuned to the moonblade, you gain the following benefits:</p>
+        <ul>
+          <li>You learn the <b>Rally</b> and the <b>Sweeping Attack</b> maneuvers.</li>
+          <li>You gain one superiority die, which is a d8 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest.</li>
+        </ul>
+      </description>
+      <sheet>
+        <description>{{moonblade essence battle:dice:amount}}d{{moonblade essence battle:dice:size}} superiority dice / short rest. DC {{moonblade essence battle:dc}}</description>
+      </sheet>
+      <rules>
+        <!-- Apply seperate ability and dice counts so that it doesn't interfere with fighter levels -->
+        <stat name="moonblade essence battle:ability" value="strength:modifier" bonus="moonblade essence battle:ability" />
+        <stat name="moonblade essence battle:ability" value="dexterity:modifier" bonus="moonblade essence battle:ability" />
+
+        <stat name="moonblade essence battle:dc" value="8" />
+        <stat name="moonblade essence battle:dc" value="proficiency" />
+        <stat name="moonblade essence battle:dc" value="moonblade essence battle:ability" />
+
+        <stat name="moonblade essence battle:dice:amount" value="1" />
+        <stat name="moonblade essence battle:dice:size" value="8" />
+
+        <!-- Select from list of 2, rather than just give the 2 so that it looks better on the sheet -->
+        <select type="Archetype Feature" name="Moonblade Essence of Battle" supports="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_RALLY|ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_SWEEPING_ATTACK" number="2"/>
+        <!-- <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_RALLY" />
+        <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_SWEEPING_ATTACK" /> -->
+      </rules>
+    </element>
+<elements>
