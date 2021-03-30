@@ -3,7 +3,7 @@
 	<info>
 		<name>Wondrous Items</name>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.0.4">
+        <update version="0.0.5">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -61,4 +61,30 @@
   			<set name="rarity">Rare</set>
   		</setters>
   	</element>
+	<element name="Vambraces of Pestilence" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_VAMBRACES_PESTILENCE">
+		<description>
+			<p>This armour was forged from pieces of monsters slayen by Krete. A Cloak of Protection lined with a Bone Devil's tail and adorned with a dragon skull pauldran and T-Rex teeth. Enchanted together by Hamish Hardshell with the help of Icora.</p>
+			<br></br>
+			<p><b>-Reforged Devil's Poison. </b>As an action, you can stab a creature of your choice and grant them 5d6 Temporary HP.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, saving throw</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />		
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
 </elements>
