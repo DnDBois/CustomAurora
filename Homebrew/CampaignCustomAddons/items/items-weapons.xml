@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.1" encoding="utf-8" ?>
 <elements>
 	<info>
 		<name>Weapons</name>
@@ -80,5 +80,25 @@
 		<set name="enhancement">2</set>
 		<set name="weapon">Dagger</set>
 	</setters>
+</element>
+</element>
+<element name="Torunn's Foci Handaxe" type="Weapon" source="Custom" id=" ">
+    <description>
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+        <p>This polished silver handaxe has been enchanted with potent magical spells. This axe has been passed down through the generations from Torunn to Torunn. </p>
+        <p>This handaxe has 8 charges. While holding it, you can use an action to expend 1 or more of its charges, using your spell save DC: <em>Spiritual Weapon</em> (3 Charges), <em>Spirit Guardians</em> (4 Charges), or <em>Guaradian of Faith<em> (5 Charges).</p>
+        <p class="indent">The staff regains 1d4 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the handaxe is destroyed.</p>
+    </description>
+    <setters>
+        <set name="category">Weapons</set>
+        <set name="cost" currency="gp">5</set>
+        <set name="weight" lb="2">2 lb.</set>
+        <set name="slot">onehand</set>
+        <set name="range">20/60</set>
+        <set name="damage" type="slashing">1d6</set>
+        <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE</set>
+        <set name="rarity">Rare</set>
+        <set name="charges">8</set>
+    </setters>
 </element>
 </elements>
