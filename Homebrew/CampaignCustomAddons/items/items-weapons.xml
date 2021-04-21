@@ -4,7 +4,7 @@
 		<name>Weapons</name>
         <description></description>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.1.4">
+        <update version="0.1.5">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -142,5 +142,22 @@
         <set name="enhancement">1</set>
         <set name="weapon">Glaive</set>
     </setters>
+</element>
+<element name="Torunn's Foci Handaxe" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_TORRUNNS_FOCI_HANDAXE">
+  <description>
+      <p>This polished silver handaxe has been enchanted with potent magical spells. This axe has been passed down through the generations from Torunn to Torunn. </p>
+      <p>This handaxe has 8 charges. While holding it, you can use an action to expend 1 or more of its charges, using your spell save DC: <em>Spiritual Weapon</em> (3 Charges), <em>Spirit Guardians</em> (4 Charges), or <em>Guaradian of Faith</em> (5 Charges).</p>
+      <p class="indent">The staff regains 1d4 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the handaxe is destroyed.</p>
+  </description>
+  <setters>
+    <set name="keywords">handaxe</set>
+    <set name="category">Magic Weapons</set>
+    <set name="cost" currency="gp">0</set>
+    <set name="weight" lb="2">2 lb.</set>
+    <set name="type" addition="handaxe">Weapon</set>
+    <set name="rarity">Rare</set>
+    <set name="weapon">Handaxe</set>
+    <set name="charges">8</set>
+  </setters>
 </element>
 </elements>
