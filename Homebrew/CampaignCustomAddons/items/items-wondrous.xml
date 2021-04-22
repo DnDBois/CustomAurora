@@ -3,14 +3,14 @@
 	<info>
 		<name>Wondrous Items</name>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.0.5">
+        <update version="0.0.6">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-wondrous.xml" />
 		</update>
 	</info>
 	<element name="Ruby of the War Mage" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_XGTE_ITEM_RUBY_OF_THE_WAR_MAGE">
 		<description>
 			<p>Etched with eldritch runes, this 1—inch-diameter ruby can be attached to a weapon and used to channel magical energy, allowing the user to manoeuvre the weapon to perform somatic components of spells.
-				If the user does not have the weapon equipped or cannot correctly manoeuvre the weapon for any reason, somatic components must be cast as normal.
+				If the user does not have the weapon equipped or cannot correctly manoeuvre the weapon for any reason, somatic components must be cast as normal. The ruby also gives proficiency to constitution saving throws.
 				For this property to work, you must attach the ruby to the weapon by pressing the ruby against it for at least 10 minutes.
 				Thereafter, the ruby can’t be removed unless you detach it as an action or the weapon is destroyed. Not even an antimagic field causes it to fall off.
 				The ruby does fall off the weapon if your attunement to the ruby ends.</p>
@@ -23,6 +23,9 @@
 			<set name="rarity">Common</set>
 			<set name="attunement" addition="by a spellcaster">true</set>
 		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+		</rules>
 	</element>
 	<element name="Bracelet of Fey Speech" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_XGTE_ITEM_BRACELET_FEY_SPEECH">
 		<description>
@@ -78,7 +81,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 		<rules>
-			<stat name="ac:misc" value="1" />		
+			<stat name="ac:misc" value="1" />
 			<stat name="strength:save:misc" value="1" />
 			<stat name="dexterity:save:misc" value="1" />
 			<stat name="constitution:save:misc" value="1" />
