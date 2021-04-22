@@ -1,9 +1,9 @@
-<?xml version="1.1" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
 		<name>Wondrous Items</name>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.0.3">
+        <update version="0.0.4">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-wondrous.xml" />
 		</update>
 	</info>
