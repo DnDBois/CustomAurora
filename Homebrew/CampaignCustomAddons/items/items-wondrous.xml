@@ -23,6 +23,9 @@
 			<set name="rarity">Common</set>
 			<set name="attunement" addition="by a spellcaster">true</set>
 		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+		</rules>
 	</element>
 	<element name="Bracelet of Fey Speech" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_XGTE_ITEM_BRACELET_FEY_SPEECH">
 		<description>
