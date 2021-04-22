@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.1" encoding="utf-8" ?>
 <elements>
 	<info>
 		<name>Wondrous Items</name>
@@ -10,7 +10,7 @@
 	<element name="Ruby of the War Mage" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_XGTE_ITEM_RUBY_OF_THE_WAR_MAGE">
 		<description>
 			<p>Etched with eldritch runes, this 1—inch-diameter ruby can be attached to a weapon and used to channel magical energy, allowing the user to manoeuvre the weapon to perform somatic components of spells.
-				If the user does not have the weapon equipped or cannot correctly manoeuvre the weapon for any reason, somatic components must be cast as normal.
+				If the user does not have the weapon equipped or cannot correctly manoeuvre the weapon for any reason, somatic components must be cast as normal. The ruby also gives proficiency to constitution saving throws.
 				For this property to work, you must attach the ruby to the weapon by pressing the ruby against it for at least 10 minutes.
 				Thereafter, the ruby can’t be removed unless you detach it as an action or the weapon is destroyed. Not even an antimagic field causes it to fall off.
 				The ruby does fall off the weapon if your attunement to the ruby ends.</p>
