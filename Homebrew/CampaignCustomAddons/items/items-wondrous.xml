@@ -90,4 +90,27 @@
 			<stat name="charisma:save:misc" value="1" />
 		</rules>
 	</element>
+	<element name="Loth's Gift of Vision" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_LOTHS_VISION">
+		<description>
+			<p>These silver goggles have purple lenses made of amethyst sunk into them. Silver spider leg-like arms hold smaller lenses that flick into place over the major crystal lenses.</p>
+			<br></br>
+			<p>While wearing Loth's Gift of Vision, you have Darkvision to a range of 150ft. As an action, you give yourself one of the following per long rest:</p>
+			<p>- Detect Magic</p>
+			<p>- Detect Evil and Good</p>
+			<p>- Detect Poison and Disease.</p>
+			<br></br>
+			<p>Once per day as an action, you can grant yourself Truesight (range 60ft) for 1 minute.</p>
+			<p>A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic.
+				Furthermore, the creature can see into the Ethereal Plane.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
 </elements>
