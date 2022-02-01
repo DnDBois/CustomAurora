@@ -160,4 +160,30 @@
     <set name="charges">8</set>
   </setters>
 </element>
+<element name="Hammer of the All-Father" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_HAMMER_OF_THE_ALLFATHER">
+    <description>
+        <p>The Hammer of the All-Father was created by Moradin himself to protect the dwarven people. Only the finest of dwarves on the most noble of quests can answert the call of such a powerful and potent weapon. It is said that the extent of the hammer's power is unknown.</p>
+		<p>When attuned to the Hammer of the All-Father you have +2 to attack and damage rolls with this weapon and it gains the thrown property (range 20/60). When weilding the Hammer of the All-Father you can use your Wisdom modifier, instead of your Strength modifier, for attack and damage rolls.</p>
+		<p>When you hit a creature with a ranged attack using this weapon, it deals an extra 1d8 damage, or 2d8 damage if it is a Giant. Immediately after you make a ranged attack the weapon flies back into the user's hand.</p>
+        <p>This warhammer has 9 charges. While holding it, you can use an action to expend 1 or more of its charges, using your spell save DC: <em>Thunderous Smite</em> (1 Charge), <em>Moonbeam</em> (2 Charges), or <em>Stone Shape<em> (4 Charges).</p>
+		<p>Spells that can be upcast by spending a number of charges equal to the upcast level. For example, to cast Moonbeam at 3rd Level you must use 3 Charges instead of 2.</p>
+		<p class="indent">The staff regains 1d8 + 1 expended charges daily at dawn.</p>
+    </description>
+    <setters>
+		<set name="keywords">warhammer</set>
+		<set name="category">Magic Weapons</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="2">2 lb.</set>
+		<set name="type" addition="warhammer">Weapon</set>
+        <set name="rarity">Legendary</set>
+        <set name="charges">9</set>
+		<set name="weapon">warhammer</set>
+		<set name="enhancement">2</set>
+    </setters>
+	<rules>
+		<stat name="Hammer of the All-Father:attack" value="wisdom:modifier" bonus="ability" />
+		<stat name="Hammer of the All-Father:attack" value="proficiency" bonus="proficiency" />
+		<stat name="Hammer of the All-Father:damage" value="wisdom:modifier" bonus="ability" />
+	</rules>
+</element>
 </elements>
