@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Delusional Mage</name>
+		<description>Delusional Mage Background</description>
+		<author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.0.5">
+		<file name="background-delusionalmage.xml" url="https://github.com/DnDBois/CustomAurora/tree/master/Homebrew/background-delusionalmage.xml" />
+		</update>
+	</info>
+
+	<element name="Delusional Mage" type="Background" source="Campaign Custom Add Ons" id="ID_BACKGROUND_DELUSIONAL_MAGE">
+		<description>
+			<p>You believe yourself to be one of the greatest mage in generations. You have rejected the advice of your peers and tutors, and spend your nights engaging in intensive self-study where you solve quadratic equations and formulate complex theorems explaining the originins of the multiverse. Your work is so advanced that the Peer Reviewers of all of the journals you have submitted your research to have rejected your work outright, unable to comprehend your genius.</p>
+			<p class="indent">This character is convinced of their genius and beleives themselves to be a powerful wizard. In reality, their </p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Deception, Performance</li>
+				<li><strong>Languages:</strong>Two of your choice</li>
+				<li><strong>Equipment:</strong>An arcane amulet, a spell book, a book on metaphysics, a set of fine clothes, and a belt pouch containing 25 gp</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_CONFIDENCE_OF_THE_DELUSIONAL" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p></p>
+		</description>
+		<setters>
+			<set name="short">Deception, Performance, 2 Languages</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Language" name="Language (Delusional Mage)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_BACKGROUND_DELUSIONAL_MAGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+		</rules>
+	</element>
+
+	<element name="Feature: Confidence of the Delusional" type="Background Feature" source="Campaign Custom Add Ons" id="ID_BACKGROUND_DELUSIONAL_MAGE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Your unwavering arrogance and superiority complex grants you the disposition of one far above your station. Those who are less knowledgable in the arcane arts </p>
+			<p class="indent">You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>
+		</description>
+		<sheet alt="Confidence of the Delusional" />
+	</element>
+</elements>
