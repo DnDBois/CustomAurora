@@ -2,9 +2,9 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-        <description></description>
-        <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.1.6">
+		<description></description>
+		<author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.1.7">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -15,14 +15,14 @@
 		<description>
 			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon. While the weapon is on your person, you have advantage on Initiative Rolls. When Orcs are within 100ft of you, the blade glows with a faint blue light.</p>
 		</description>
-        <setters>
+        	<setters>
 			<set name="keywords">longsword</set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="any sword">Weapon</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Uncommon</set>
-            <set name="enhancement">1</set>
+            		<set name="enhancement">1</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
 		</setters>
 	</element>
@@ -64,126 +64,128 @@
 		</setters>
 	</element>
 	<element name="Remnant of the Defeated" type="Magic Item" source="Campaign Custom Add Ons" id="D_DNDBOIS_MAGIC_ITEM_REMNANT_OF_THE_DEFEATED">
-	<description>
-		<p><b>Battleworn. </b>You recieve a +2 bonus to Attack rolls when attacking with this weapon.</p>
-		<br></br>
-		<p><b>Recalling the War. </b>As a free action you may speak a command word and summon the full spectral blade of this weapon. The dagger turns into a longsword. It deals 1d8+2 Slashing damage when used with one hand, or 1d10+2 Slashing when used with both hands.</p>
-		<p>All properties of the dagger (Finesse, Light, Range, Thrown) do not apply in this form.</p>
-		<p>The weapon remains in this form until you speak the command word again.</p>
-	</description>
-	<setters>
-		<set name="keywords">dagger</set>
-		<set name="category">Magic Weapons</set>
-		<set name="cost" currency="gp">0</set>
-		<set name="type" addition="dagger">Weapon</set>
-		<set name="rarity">Rare</set>
-		<set name="enhancement">2</set>
-		<set name="weapon">Dagger</set>
-	</setters>
-</element>
-<element name="Scythe" type="Weapon" source="Campaign Custom Add Ons" id="ID_DNDBOIS_WEAPON_SCYTHE">
-	<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
-	<description>
-		<p></p>
-	</description>
-	<setters>
-		<set name="category">Weapons</set>
-		<set name="cost" currency="gp">15</set>
-		<set name="weight" lb="3">3 lb.</set>
-		<set name="slot">onehand</set>
-		<set name="damage" type="slashing">1d8</set>
-		<set name="versatile">1d10</set>
-		<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
-	</setters>
-</element>
-<element name="Moonblade" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_MOONBLADE">
-	<description>
-		<p>"This Scythe is made from a black metal with grey waves giving it a dark marble look. Thought to be forged from the Moon itself, the point where the handle meets the blade is disconnected, and only a small blue stone holds the pieces together. It is cratered like that of the Moon. On the handle there are four runes that glow when held, each representing the previous owners. Currently, two shine blue while the rest are silver. A symbol of Tyr hangs by a silver chain wrapped around the blade"</p>
-		<br></br>
-		<p>When attuned to Moonblade, you have a +2 to attack and damage rolls with this weapon.</p>
-		<br></br>
-		<p class="indent"><b>Essence of Courage. </b>While holding this weapon, you cannot be frightened</p>
-		<p class="indent"><b>Essence of Battle. </b>While attuned to this, you gain an additional d8 superiority die, and the two maneuvers: <b>Rally</b> and <b>Sweeping Attack</b>.</p>
-	</description>
-			<setters>
-		<set name="keywords">Scythe</set>
-		<set name="category">Magic Weapons</set>
-		<set name="cost" currency="gp">0</set>
-		<set name="type" addition="scythe">Weapon</set>
-		<set name="attunement">true</set>
-		<set name="rarity">Legendary</set>
-		<set name="enhancement">2</set>
-		<set name="weapon">Scythe</set>
-	</setters>
-	<rules>
-      <grant type="Feat" id="ID_DNDBOIS_FEAT_MOONBLADE_ESSENCE_BATTLE" />
-    </rules>
-</element>
-<element name="Sargonnas' Claw" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_SARGONNAS_BLADE">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
-    <description>
-        <p>"This Glaive was orignally created by the Djinni Salah Balaah, made from one piece of a finely polished metal with swirling motifs carved into it, representing the Elemental Plane of Air. Now, these motifs have thin wisps of smoke trailing from them, and the cutting edge of the blade is an ashen black. However, when in use, the cutting edge glows red and orange and flickers like flame."</p>
-	<br></br>
-	<p>"Sargonnas' Claw is a +1 Glaive that holds 2 charges, that it regains at dawn."</p>
-	<br></br>
-	<p><b>Raging Embers. </b>While raging Sargonnas' Claw activates as the blade heats up intensely. While active, Sargonnas' Claw deal an extra 1d6 fire damage on a hit</p>
-	<br></br>
-	<p><b>Sweeping Blaze. </b>As an action while Sargonnas' Claw, you can expend 1 charge and sweep the glaive in an arc, sending out a wave of flame. Each creature in a 15 foot cone must make a DC 14 Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much on a successful one. The fire ignites any flammable objects in the area that are not being worn or carried.</p>
-    </description>
-    		<setters>
-        <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
-        <set name="keywords">Glaive</set>
-        <set name="category">Magic Weapons</set>
-        <set name="cost" currency="gp">0</set>
-        <set name="slot">twohand</set>
-        <set name="type" addition="glaive">Weapon</set>
-        <set name="attunement">true</set>
-        <set name="rarity">Rare</set>
-        <set name="enhancement">1</set>
-        <set name="weapon">Glaive</set>
-    </setters>
-</element>
-<element name="Torunn's Foci Handaxe" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_TORRUNNS_FOCI_HANDAXE">
-  <description>
-      <p>This polished silver handaxe has been enchanted with potent magical spells. This axe has been passed down through the generations from Torunn to Torunn. </p>
-      <p>This handaxe has 8 charges. While holding it, you can use an action to expend 1 or more of its charges, using your spell save DC: <em>Spiritual Weapon</em> (3 Charges), <em>Spirit Guardians</em> (4 Charges), or <em>Guaradian of Faith</em> (5 Charges).</p>
-      <p class="indent">The staff regains 1d4 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the handaxe is destroyed.</p>
-  </description>
-  <setters>
-    <set name="keywords">handaxe</set>
-    <set name="category">Magic Weapons</set>
-    <set name="cost" currency="gp">0</set>
-    <set name="weight" lb="2">2 lb.</set>
-    <set name="type" addition="handaxe">Weapon</set>
-    <set name="rarity">Rare</set>
-    <set name="weapon">Handaxe</set>
-    <set name="charges">8</set>
-  </setters>
-</element>
-<element name="Hammer of the All-Father" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_HAMMER_OF_THE_ALLFATHER">
-    <description>
-        <p>The Hammer of the All-Father was created by Moradin himself to protect the dwarven people. Only the finest of dwarves on the most noble of quests can answert the call of such a powerful and potent weapon. It is said that the extent of the hammer's power is unknown.</p>
-		<p>When attuned to the Hammer of the All-Father you have +2 to attack and damage rolls with this weapon and it gains the thrown property (range 20/60). When weilding the Hammer of the All-Father you can use your Wisdom modifier, instead of your Strength modifier, for attack and damage rolls.</p>
-		<p>When you hit a creature with a ranged attack using this weapon, it deals an extra 1d8 damage, or 2d8 damage if it is a Giant. Immediately after you make a ranged attack the weapon flies back into the user's hand.</p>
-        <p>This warhammer has 9 charges. While holding it, you can use an action to expend 1 or more of its charges, using your spell save DC: <em>Thunderous Smite</em> (1 Charge), <em>Moonbeam</em> (2 Charges), or <em>Stone Shape</em> (4 Charges).</p>
-		<p>Spells that can be upcast by spending a number of charges equal to the upcast level. For example, to cast Moonbeam at 3rd Level you must use 3 Charges instead of 2.</p>
-		<p class="indent">The staff regains 1d8 + 1 expended charges daily at dawn.</p>
-    </description>
-    <setters>
-		<set name="keywords">warhammer</set>
-		<set name="category">Magic Weapons</set>
-		<set name="cost" currency="gp">0</set>
-		<set name="weight" lb="2">2 lb.</set>
-		<set name="type" addition="warhammer">Weapon</set>
-        <set name="rarity">Legendary</set>
-        <set name="charges">9</set>
-		<set name="weapon">warhammer</set>
-		<set name="enhancement">2</set>
-    </setters>
-	<rules>
-		<stat name="Hammer of the All-Father:attack" value="wisdom:modifier" bonus="ability" />
-		<stat name="Hammer of the All-Father:attack" value="proficiency" bonus="proficiency" />
-		<stat name="Hammer of the All-Father:damage" value="wisdom:modifier" bonus="ability" />
-	</rules>
-</element>
+		<description>
+			<p><b>Battleworn. </b>You recieve a +2 bonus to Attack rolls when attacking with this weapon.</p>
+			<br></br>
+			<p><b>Recalling the War. </b>As a free action you may speak a command word and summon the full spectral blade of this weapon. The dagger turns into a longsword. It deals 1d8+2 Slashing damage when used with one hand, or 1d10+2 Slashing when used with both hands.</p>
+			<p>All properties of the dagger (Finesse, Light, Range, Thrown) do not apply in this form.</p>
+			<p>The weapon remains in this form until you speak the command word again.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+	<element name="Scythe" type="Weapon" source="Campaign Custom Add Ons" id="ID_DNDBOIS_WEAPON_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+		</setters>
+	</element>
+	<element name="Moonblade" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_MOONBLADE">
+		<description>
+			<p>"This Scythe is made from a black metal with grey waves giving it a dark marble look. Thought to be forged from the Moon itself, the point where the handle meets the blade is disconnected, and only a small blue stone holds the pieces together. It is cratered like that of the Moon. On the handle there are four runes that glow when held, each representing the previous owners. Currently, three shine blue while the rest are silver. A symbol of Tyr hangs by a silver chain wrapped around the blade"</p>
+			<br></br>
+			<p>When attuned to Moonblade, you have a +3 to attack and damage rolls with this weapon.</p>
+			<br></br>
+			<p class="indent"><b>Essence of Courage. </b>While holding this weapon, you cannot be frightened</p>
+			<p class="indent"><b>Essence of Battle. </b>While attuned to this, you gain an additional d8 superiority die, and the two maneuvers: <b>Rally</b> and <b>Sweeping Attack</b>.</p>
+			<p class="indent"><b>Essence of Wisdom. </b>While holding this item, you gain an additional use of your Channel Divinity Feature.</p>
+		</description>
+		<setters>
+			<set name="keywords">Scythe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="scythe">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Scythe</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_DNDBOIS_FEAT_MOONBLADE_ESSENCE_BATTLE" />
+			<stat name="channel divinity:count" value="1" />
+		</rules>
+	</element>
+	<element name="Sargonnas' Claw" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_SARGONNAS_BLADE">
+    		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	    	<description>
+			<p>"This Glaive was orignally created by the Djinni Salah Balaah, made from one piece of a finely polished metal with swirling motifs carved into it, representing the Elemental Plane of Air. Now, these motifs have thin wisps of smoke trailing from them, and the cutting edge of the blade is an ashen black. However, when in use, the cutting edge glows red and orange and flickers like flame."</p>
+			<br></br>
+			<p>"Sargonnas' Claw is a +1 Glaive that holds 2 charges, that it regains at dawn."</p>
+			<br></br>
+			<p><b>Raging Embers. </b>While raging Sargonnas' Claw activates as the blade heats up intensely. While active, Sargonnas' Claw deal an extra 1d6 fire damage on a hit</p>
+			<br></br>
+			<p><b>Sweeping Blaze. </b>As an action while Sargonnas' Claw, you can expend 1 charge and sweep the glaive in an arc, sending out a wave of flame. Each creature in a 15 foot cone must make a DC 14 Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much on a successful one. The fire ignites any flammable objects in the area that are not being worn or carried.</p>
+	    	</description>
+		<setters>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+			<set name="keywords">Glaive</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">twohand</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Glaive</set>
+		</setters>
+	</element>
+	<element name="Torunn's Foci Handaxe" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_TORRUNNS_FOCI_HANDAXE">
+		<description>
+			<p>This polished silver handaxe has been enchanted with potent magical spells. This axe has been passed down through the generations from Torunn to Torunn. </p>
+			<p>This handaxe has 8 charges. While holding it, you can use an action to expend 1 or more of its charges, using your spell save DC: <em>Spiritual Weapon</em> (3 Charges), <em>Spirit Guardians</em> (4 Charges), or <em>Guaradian of Faith</em> (5 Charges).</p>
+			<p class="indent">The staff regains 1d4 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the handaxe is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">handaxe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type" addition="handaxe">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Handaxe</set>
+			<set name="charges">8</set>
+	  	</setters>
+	</element>
+	<element name="Hammer of the All-Father" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_HAMMER_OF_THE_ALLFATHER">
+		<description>
+			<p>The Hammer of the All-Father was created by Moradin himself to protect the dwarven people. Only the finest of dwarves on the most noble of quests can answert the call of such a powerful and potent weapon. It is said that the extent of the hammer's power is unknown.</p>
+			<p>When attuned to the Hammer of the All-Father you have +2 to attack and damage rolls with this weapon and it gains the thrown property (range 20/60). When weilding the Hammer of the All-Father you can use your Wisdom modifier, instead of your Strength modifier, for attack and damage rolls.</p>
+			<p>When you hit a creature with a ranged attack using this weapon, it deals an extra 1d8 damage, or 2d8 damage if it is a Giant. Immediately after you make a ranged attack the weapon flies back into the user's hand.</p>
+			<p>This warhammer has 9 charges. While holding it, you can use an action to expend 1 or more of its charges, using your spell save DC: <em>Thunderous Smite</em> (1 Charge), <em>Moonbeam</em> (2 Charges), or <em>Stone Shape</em> (4 Charges).</p>
+			<p>Spells that can be upcast by spending a number of charges equal to the upcast level. For example, to cast Moonbeam at 3rd Level you must use 3 Charges instead of 2.</p>
+			<p class="indent">The staff regains 1d8 + 1 expended charges daily at dawn.</p>
+		</description>
+	    	<setters>
+			<set name="keywords">warhammer</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type" addition="warhammer">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="charges">9</set>
+			<set name="weapon">warhammer</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<stat name="Hammer of the All-Father:attack" value="wisdom:modifier" bonus="ability" />
+			<stat name="Hammer of the All-Father:attack" value="proficiency" bonus="proficiency" />
+			<stat name="Hammer of the All-Father:damage" value="wisdom:modifier" bonus="ability" />
+		</rules>
+	</element>
 </elements>
