@@ -3,7 +3,7 @@
 	<info>
 		<name>Wondrous Items</name>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.0.6">
+        <update version="0.0.7">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -112,5 +112,30 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 		</setters>
+	</element>
+
+	<element name="Vie, Eternal Growth" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_VIEETERNALGROWTH">
+        	<description>
+	            <p>"This black leather, fingerless guantlet extends up the entire arm of the user.  Fine dark metal is gilded in flowing shapes into the wrapped design.  It was created by Archdruid Luthlumbra to bring life to the Elemental Plane of Earth, forming the Living Oasis.  Archdruid Luthlumbra augmented this gauntlet to enable them to protect their Oasis - this power currently lies dormant within Vie, Eternal Growth."</p>
+			<p>Vie, Eternal Growth sets your Wisdom to 23 while wearing this gauntlet.</p>
+			<p><b>Luthlumbral's Creation.</b>  Vie, Eternal Growth has 9 charges.  It regains 1d8+1 charges daily at dawn.  You can use these charges to gain additional spell slots as a bonus action.  To create a n-th level spell, expend n+1 charges.  You can create spell slots no higher in level than 5th.</p>
+			<p><b>Luthlumbral's Magic.</b>  Vie, Eternal Growth is enchanted with permanent spells within it.  Spells cast from the gauntlet use your spell save DC.</p>
+			<p>At will: Produce Flame, Thorn Whip</p>
+			<p>3/day each: Lesser Restoration, Shadow Blade</p>
+			<p>1/day each: Grasping Vine</p>
+        	</description>
+	        <setters>
+        	    <set name="keywords">wisdom</set>
+	            <set name="category">Wondrous Items</set>
+        	    <set name="cost" currency="gp">0</set>
+	            <set name="weight" lb="0">0 lb.</set>
+        	    <set name="slot">hands</set>
+	            <set name="type">Wondrous Item</set>
+        	    <set name="attunement">true</set>
+	            <set name="rarity">Legendary</set>
+	        </setters>
+	        <rules>
+	            <stat name="wisdom:score:set" value="23" bonus="base" />
+	        </rules>
 	</element>
 </elements>
