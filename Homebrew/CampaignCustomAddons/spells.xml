@@ -6,5 +6,139 @@
 			<file name="spells.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/spells.xml" />
 		</update>
 	</info>
-  
- <elements>
+	<element name="Bloodthorn" type="Spell" source="Custom Add Ons" id="ID_DNDBOIS_BLOODTHORN">
+    		<supports>Druid, Ranger, Warlock</supports>
+		<description>
+			<p>You imbue a single thorn with a deadly enchantment, hurling it out towards a creature that you can see within range.  Make a ranged spell attack roll.  If you hit, the target takes 4d10 piercing damage.  If you hit, you can choose an additional target for the bloodthorn to seek, repeating the attack against a different target within 60 feet of the previous one and using the thorn's new position to determine if a target would gain the benefits of cover.  You can repeat this process up to three times, or until the attack misses.  A creature cannot be targeted more than once per casting.</p>
+			<p>The piercing damage increases by 1d10 per spell slot above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A thorn</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Shadowthorn" type="Spell" source="Custom Add Ons" id="ID_DNDBOIS_SHADOWTHORN">
+		<supports>Druid, Warlock</supports>
+		<description>
+			<p>Your rear back and summon a spike of shadow, attempting to stab and push a creature within range.  Make a melee spell attack roll.  If you hit, the target takes 1d6 piercing damage and is shoved 5ft directly away from you.</p>
+			<p>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level(3d6), and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Shield the Dying" type="Spell" source="Custom Add Ons" id="ID_DNDBOIS_SHIELDTHEDYING">
+		<supports>Druid</supports>
+		<description>
+			<p>When a creature (that you can see within range) is reduced to 0 hit points, you call on nature to protect them from further harm.  The terrain that they lie on envelops them, imposing disadvantage on any attacks targeting them for the spell's duration.  Additionally, this shield breaks any hostile creature's line of sight with the target.</p>
+			<p>If cast at higher levels, the spell heals the creature 1d4 hp if they do not fail any death saving throws before your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">The husk of a seed</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Shroud of Spores" type="Spell" source="Custom Add Ons" id="ID_DNDBOIS_SHROUDOFSPORES">
+		<supports>Druid</supports>
+		<description>
+			<p>A cloud of spores envelopes 3 targets (creatures that you can see within 30ft) and takes one of the following two effects.</p>
+			<p><b>Effect 1.</b> Each target must make a Dexterity saving throw. On failing, a target suffers 2d8 poison damage, has disadvantage on Dexterity and Wisdom saving throws, and makes ranged attacks with disadvantage. At the start of each of its turns, the creature takes an additional 2d8 poison damage and then makes another Dexterity saving throw. On succeeding, the target suffers half damage and does not suffer further effects.</p>
+			<p><b>Effect 2.</b> Each willing target gains 2d8 temporary hit points.  They also gain advantage on one of the following saving throws: Dexterity, Wisdom, or Constitution.  This is decided when the spell is cast.  If a creature targeted by this is unwilling, they must make a Dexterity saving throw. If they fail, the effect takes hold. If they succeed, they shrug off the effects. On subsequent turns, an affected creature gains an additional 1d8 temporary hit points.</p>
+			<p>If cast at higher levels, the spell heals the creature 1d4 hp if they do not fail any death saving throws before your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A small piece of moss or a small mushroom (Circle of Spores Druids forgo this material requirement)</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Withered Heart" type="Spell" source="Custom Add Ons" id="ID_DNDBOIS_WITHEREDHEART">
+		<supports>Druid, Warlock</supports>
+		<description>
+			<p>You reach out towards a living creature that you can see. The target must make a Constitution saving throw. If it fails, its body is filled with vile poison, and it takes 10d6 necrotic damage at the start of its next turn. If the target is reduced to 0 hit points before the start of its next turn, the poison explodes outward from it in a shower of disgusting bile. Creatures within a 10-foot radius of the target must make a Dexterity saving throw. If they fail, they take 10d6 necrotic damage, or half as much on a successful save. This spell has <b>no effect</b> on <i>undead or constructs</i>.</p>
+			<p>When you cast this spell using a spell slot of 4th level or higher, the damage of each phase of the spell increases by 2d6 per spell slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Withering Vines" type="Spell" source="Custom Add Ons" id="ID_DNDBOIS_WITHERINGVINES">
+		<supports>Druid, Warlock</supports>
+		<description>
+			<p>You call forth thick, grasping, thorned vines from the ground around a target that you can see within range, attempting to trap them.  The target must make a Dexterity saving throw.  Creatures that are Huge or larger make this saving throw with advantage.  If the target fails, the vines wrap around them: they are restrained and take 3d8 piercing and 3d8 necrotic damage.  If the target succeeds, they take half as much damage and are not restrained.  At the start of each subsequent turn, while the target is restrained by the vines, they take an additional 1d8 necrotic damage.  A restrained target can make a Strength check (vs your spell save DC) on subsequent turns to attempt to escape.  Additionally, you regain hit points equal to half the damage dealt at each point.</p>
+			<p>If the target is slain while restrained by this spell, the vines do not fade when the spell ends.  Instead, they become real vines entombing the fallen creature.</p>
+			<p>When you cast this spell using a spell slot of 5th level or higher, both piercing and necrotic damage increase by 1d8 per spell slot above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A pinch of ash</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>
