@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Staffs</name>
+		<description></description>
+        <author url="https://github.com/DnDBois">DnD Bois</author>
+        <update version="0.0.1">
+			<file name="items-staffs.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-staffs.xml" />
+		</update>
+	</info>
+</elements>

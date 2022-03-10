@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>ShatteredLand</name>
+		<description>Custom Content for A Shattered Land Campaign</description>
+		<author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.0.1">
+			<file name="ShatteredLand.index" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/source.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/feats.xml" />
+		<file name="spells.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/spells.xml" />
+        <file name="items-armor.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-armor.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-gear.xml" />
+		<file name="items-potions.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-potions.xml" />
+		<file name="items-rings.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-rings.xml" />
+		<file name="items-rods.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-rods.xml" />
+		<file name="items-staffs.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-staffs.xml" />
+		<file name="items-treasure.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-treasure.xml" />
+		<file name="items-wands.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-wands.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-weapons.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-wondrous.xml" />
+	</files>
+</index>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Custom Feats</description>
+        <author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/feats.xml" />
+		</update>
+	</info>
+</elements>
