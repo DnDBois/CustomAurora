@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/source.xml" />
+		</update>
+	</info>
+	<element name="A Shattered Land" type="Source" source="Homebrew" id="ID_DNDBOIS_SOURCE_SHATTERED_LAND">
+		<description>
+			<![CDATA[<p><strong>All of the Custom Items for A Shattered Land Campaign</strong></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">ASL</set>
+			<set name="url">https://github.com/DnDBois</set>
+			<set name="author" abbreviation="DNDBois" url="https://github.com/DnDBois">DND Bois</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20210720</set>
+		</setters>
+	</element>
+</elements>

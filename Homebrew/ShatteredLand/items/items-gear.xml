@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adventuring Gear</name>
+		<author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.0.1">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-gear.xml" />
+		</update>
+	</info>
+</elements>

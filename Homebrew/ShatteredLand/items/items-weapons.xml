@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description></description>
+		<author url="https://github.com/DnDBois">DnD Bois</author>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-weapons.xml" />
+		</update>
+	</info>
+    	<element name="The Air Spear (Akadi's Spear)" type="Magic Item" source="A Shattered Land" id="ID_DNDBOIS_ASL_MAGIC_ITEM_AKADI_SPEAR">
+    		<description>
+                <p>This unassumingly delicate and simple spear is incredibly light to hold. Close inspection reveals intricate engravings of clouds and leaves on a breeze up and down the grey-white body.</p>
+                <br></br>
+                <p>This weapon has +2 to attack and damage rolls made with it as a spear, and has its ranges doubled for the purposes of being thrown.</p>
+                <br></br>
+                <p><b>Whirlwind Strike. </b>Instead of attacking with the spear tip, the attuned wielder can choose to attack with the opposing (flat) end of the shaft. When attacking in this way, the attack roll is the same as normal but (on a hit) deals 1d4 bludeoning damage. The target must make a strength saving throw (DC 15) or be pushed 10 feet, in a direction of your choice, away from you.</p>
+                <br></br>
+                <p><b>Birds of a Feather. </b>If you choose to throw the spear to make a ranged attack, the spear can return to your hand after the attack. It is a bonus action to recall the spear in this way.</p>
+                <br></br>
+                <p><b>Akadi's Domain. </b>This spear also contains limited innate spellcasting. While attuned to it, you can create harmless sensory effects which rely on manipulation of the wind (such as in <em>Druidcraft</em> or <em>Thaumaturgy</em>) which do not directly cause harm to another creature. Additionally, the spear contains 3 charges for use on <em>Freedom of Movement</em> and <em>Warding Wind</em>. Note that if the spear is used to attack while the latter of these is active, the spell ends early.</p>
+            </description>
+		<setters>
+			<set name="keywords">Spear</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="spear">Weapon</set>
+            <set name="range">40/120</set>
+			<set name="attunement" addition="by a creature with a fly-speed who is not evil-aligned">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Spear</set>
+		</setters>
+	</element>
+</elements>

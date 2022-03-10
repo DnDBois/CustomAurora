@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wondrous Items</name>
+        <author url="https://github.com/DnDBois">DnD Bois</author>
+        <update version="0.0.1">
+			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-wondrous.xml" />
+		</update>
+	</info>
+    <element name="Caldan's Mask" type="Magic Item" source="A Shattered Land" id="ID_DNDBOIS_ASL_MAGIC_ITEM_CALDANS_MASK">
+        <description>
+            <p>This beautifully constructed mask serves more purpose than just to conceal the wearer's identity. Imbued with arcane energy, it allows the wearer to cast <em>Identify</em> through the charges it contains. The mask contains a maximum of 3 charges and regains 1 per long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Catnip Amulet" type="Magic Item" source="A Shattered Land" id="ID_DNDBOIS_ASL_MAGIC_ITEM_CATNIP_AMULET">
+		<description>
+			<p>This gold and jade amulet seems to draw domestic cats to it. While wearing the necklace, you have advantage on ability checks made to find or call Tiny domestic cats (if there are any) and on Wisdom (Animal Handling) checks you make to interact with them.</p>
+        </description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">false</set>
+            <set name="slot">neck</set>
+		</setters>
+	</element>
+    <element name="Dream Mantle" type="Magic Item" source="A Shattered Land" id="ID_DNDBOIS_ASL_MAGIC_ITEM_DREAM_MANTLE">
+        <description>
+            <p>This short purple and blue cape is almost iridescent and is magically difficult to focus on from afar. The mantle creates shifting, floating mirages of far away places around you that are visible to distant creatures. Once attuned to the cloak, creatures 30 or more feet away from you make their perception checks to detect as well as ranged attacks against you with disadvantage, so long as they rely on sight in order to make them. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.</p>
+            <br></br>
+            <p>In addition, you can cast <em>Dream</em> (DC 16) at its lowest level once attuned to the mantle, using yourself as the messenger within the dream. Once you have cast the spell using the cloak, you cannot do so again for another 7 days.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+        </setters>
+    </element>
+</elements>
