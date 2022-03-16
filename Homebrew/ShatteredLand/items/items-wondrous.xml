@@ -3,13 +3,13 @@
 	<info>
 		<name>Wondrous Items</name>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/ShatteredLand/items/items-wondrous.xml" />
 		</update>
 	</info>
     <element name="Caldan's Mask" type="Magic Item" source="A Shattered Land" id="ID_DNDBOIS_ASL_MAGIC_ITEM_CALDANS_MASK">
         <description>
-            <p>This beautifully constructed mask serves more purpose than just to conceal the wearer's identity. Imbued with arcane energy, it allows the wearer to cast <em>Identify</em> through the charges it contains. The mask contains a maximum of 3 charges and regains 1 per long rest.</p>
+            <p>This beautifully constructed mask serves more purpose than just to conceal the wearer's identity. Imbued with arcane energy, the mask contains a number of charges equal to the wearer's spellcasting modifier plus their proficiency bonus. The wearer, once attuned, can expended charges to cast the following spells: <em>Identify</em>, <em>Darkvision (self)</em>, <em>Comprehend Language</em>. The mask regains 1d6+1 charges at dawn until full.</p>
         </description>
         <setters>
             <set name="category">Wondrous Items</set>
@@ -17,8 +17,13 @@
             <set name="weight" lb="0">0 lb.</set>
             <set name="slot">head</set>
             <set name="type">Wondrous Item</set>
-            <set name="rarity">Uncommon</set>
+            <set name="rarity">Legendary</set>
         </setters>
+        <rules>
+            <grant type="spell" id="ID_PHB_SPELL_IDENTIFY" />
+            <grant type="spell" id="ID_PHB_SPELL_DARKVISION" />
+            <grant type="spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" />
+        </rules>
     </element>
     <element name="Catnip Amulet" type="Magic Item" source="A Shattered Land" id="ID_DNDBOIS_ASL_MAGIC_ITEM_CATNIP_AMULET">
 		<description>
