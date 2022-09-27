@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description></description>
 		<author url="https://github.com/DnDBois">DnD Bois</author>
-		<update version="0.1.6">
+		<update version="0.1.9">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -190,4 +190,17 @@
 			<stat name="Hammer of the All-Father:damage" value="wisdom:modifier" bonus="ability" />
 		</rules>
 	</element>
+	<element name="Stormfire's Blessing" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_MAGIC_ITEM_STORMFIRES_BLESSING">
+	<description>
+		<p>As an attack, call forth the power of flaming lightning to strike your foes. Make a ranged attack using your strength modifier, range 20/60 ft, on a hit deal 4d6 fire damage.</p>
+	</description>
+	<setters>
+		<set name="keywords">spear</set>
+		<set name="category">Magic Weapons</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="type" addition="spear">Weapon</set>
+		<set name="rarity">Legendary</set>
+		<set name="weapon">Spear</set>
+	</setters>
+</element>
 </elements>
