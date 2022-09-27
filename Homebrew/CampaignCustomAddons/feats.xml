@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Custom Feats</description>
         <author url="https://github.com/DnDBois">DnD Bois</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/feats.xml" />
 		</update>
 	</info>
@@ -41,5 +41,15 @@
         <!-- <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_RALLY" />
         <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_MANEUVER_SWEEPING_ATTACK" /> -->
       </rules>
+    </element>
+    <element name="Moonblade, Essence of Might" type="Feat" source="Campaign Custom Add Ons" id="ID_DNDBOIS_FEAT_MOONBLADE_ESSENCE_MIGHT">
+      <compendium display="false" />
+      <requirements>ID_DNDBOIS_MAGIC_ITEM_MOONBLADE</requirements>
+      <description>
+        <p>While attuned to the moonblade, you gain an additional use of your action surge ability at the cost of gaining 1 level of exhaustion.</p>
+      </description>
+      <sheet usage="1/Short Rest">
+        <description>On your turn, you can take one additional action on top of your regular action. After using this ability you gain 1 level of exhaustion.</description>
+      </sheet>
     </element>
 </elements>
