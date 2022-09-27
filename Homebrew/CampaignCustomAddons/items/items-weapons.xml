@@ -4,7 +4,7 @@
 		<name>Weapons</name>
 		<description></description>
 		<author url="https://github.com/DnDBois">DnD Bois</author>
-		<update version="0.1.7">
+		<update version="0.1.6">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/DnDBois/CustomAurora/master/Homebrew/CampaignCustomAddons/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -105,6 +105,7 @@
 			<p class="indent"><b>Essence of Courage. </b>While holding this weapon, you cannot be frightened</p>
 			<p class="indent"><b>Essence of Battle. </b>While attuned to this, you gain an additional d8 superiority die, and the two maneuvers: <b>Rally</b> and <b>Sweeping Attack</b>.</p>
 			<p class="indent"><b>Essence of Wisdom. </b>While holding this item, you gain an additional use of your Channel Divinity Feature.</p>
+			<p class="indent"><b>Essenece of Might. </b>While attuned to the Moonblade, you gain an additional use of your Action Surge Feature. Once you use this ability, you gain 1 level of exhaustion.</p>
 		</description>
 		<setters>
 			<set name="keywords">Scythe</set>
@@ -119,6 +120,7 @@
 		<rules>
 			<grant type="Feat" id="ID_DNDBOIS_FEAT_MOONBLADE_ESSENCE_BATTLE" />
 			<stat name="channel divinity:count" value="1" />
+			<grant type="Feat" id="ID_DNDBOIS_FEAT_MOONBLADE_ESSENCE_MIGHT" />
 		</rules>
 	</element>
 	<element name="Sargonnas' Claw" type="Magic Item" source="Campaign Custom Add Ons" id="ID_DNDBOIS_DMG_MAGIC_ITEM_SARGONNAS_BLADE">
